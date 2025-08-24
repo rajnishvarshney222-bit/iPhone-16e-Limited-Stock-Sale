@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APPLE iPhone 16e (White, 128 GB)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+  <!-- Sale Timer -->
+  <div class="timer-section">
+    <div id="sale-timer" class="timer-box">Sale lives: 25/08/2025 - 15/09/2025 | 00d:00h:00m:00s</div>
+    <div class="countdown-bar">
+      <div id="countdown-progress"></div>
+    </div>
+  </div>
+
+  <!-- Product Name -->
+  <div class="product-name">
+    <h1>APPLE</h1>
+    <h2>iPhone 16e (White, 128 GB)</h2>
+  </div>
+
+  <!-- Slider -->
+  <div class="slider">
+    <span class="arrow left" onclick="prevSlide()">&#10094;</span>
+    <span class="arrow right" onclick="nextSlide()">&#10095;</span>
+    <div id="slide-container">
+      <img src="https://i.postimg.cc/vZx2LQbp/Screenshot-2025-08-25-00-25-25-00-c4b2fae5edd267b2847f1b32e9bc41c3.jpg" class="slide" style="display:block">
+      <img src="https://i.postimg.cc/6pCLpT95/Screenshot-2025-08-25-00-25-11-26-c4b2fae5edd267b2847f1b32e9bc41c3.jpg" class="slide">
+      <img src="https://i.postimg.cc/NMBNcmmc/Screenshot-2025-08-25-00-25-09-33-c4b2fae5edd267b2847f1b32e9bc41c3.jpg" class="slide">
+    </div>
+    <div class="offer-badge">98% OFF</div>
+  </div>
+
+  <!-- Color Selection -->
+  <div class="color-selection">
+    <span>Select Color:</span>
+    <div class="color-btn black" onclick="changeColor('black')"></div>
+    <div class="color-btn white" onclick="changeColor('white')"></div>
+  </div>
+
+  <!-- Price Section -->
+  <div class="price-section">
+    <span class="mrp">₹59,900</span>
+    <span class="sale">₹199</span>
+    <span class="discount">98% OFF</span>
+  </div>
+
+  <!-- Buttons -->
+  <div class="buttons">
+    <button class="button buy-now" onclick="scrollToAddress()">Buy Now</button>
+    <button class="button add-cart" onclick="addToCart()">Add to Cart</button>
+  </div>
+
+  <!-- Address Form -->
+  <div id="address-form" class="address-section">
+    <h3>Enter Address</h3>
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="text" id="address" placeholder="Address" required>
+    <input type="text" id="city" placeholder="City" required>
+    <input type="text" id="state" placeholder="State" required>
+    <input type="text" id="zip" placeholder="ZIP Code" required>
+    <button class="button proceed-payment" onclick="proceedToPayment()">Proceed to Payment</button>
+  </div>
+
+  <!-- Payment Options -->
+  <div id="payment-modal" class="payment-modal">
+    <div class="payment-content">
+      <span class="payment-close" onclick="closePayment()">&times;</span>
+      <h3>Choose Payment Option</h3>
+      <button class="payment-btn" onclick="payUPI()">---Pay ₹199 via UPI---</button>
+      <button class="payment-btn" onclick="payCOD()">---Cash on Delivery--- <br> (₹199 charges)</button>
+    </div>
+  </div>
+
+  <!-- Overview Section -->
+  <div class="overview">
+    <h3>Overview</h3>
+    <p>Apple iPhone 16e comes with the latest A18 Bionic chip, 6.7-inch Super Retina XDR display, dual camera system, ultra-fast 5G connectivity, and long-lasting battery. Sleek aluminum and glass finish with multiple colors (Black & White) available. iOS ecosystem ensures seamless app integration, security, and media support. Perfect for gaming, photography, and productivity.</p>
+  </div>
+
+  <!-- Specs Section -->
+  <div class="specs">
+    <h3>Specifications</h3>
+    <ul>
+      <li>Display: 6.7-inch Super Retina XDR</li>
+      <li>Chip: A18 Bionic</li>
+      <li>Storage: 128 GB</li>
+      <li>Camera: Dual 12 MP</li>
+      <li>Battery: 4500 mAh</li>
+      <li>OS: iOS 19</li>
+    </ul>
+  </div>
+
+  <!-- Reviews Section -->
+  <div class="reviews">
+    <h3>Reviews</h3>
+    <div class="reviews-container">
+      <div class="review">“Amazing phone, super fast!” – Raj</div>
+      <div class="review">“Camera quality is fantastic.” – Priya</div>
+      <div class="review">“Battery lasts all day.” – Ankit</div>
+    </div>
+  </div>
+
+  <!-- Related Products Section -->
+  <div class="related-products">
+    <h3>Related Products</h3>
+    <div class="related-container">
+      <div class="product-card">iPhone 16e Case</div>
+      <div class="product-card">Wireless Charger</div>
+      <div class="product-card">AirPods Pro</div>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
